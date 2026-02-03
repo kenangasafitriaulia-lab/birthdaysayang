@@ -1,6 +1,155 @@
-birthday.html
-foto-reihan.jpg
-sticker-bear.png
-sticker-love.png
-sticker-cake.png
-ive-always-loved-you.mp3
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>happy birthday, ma sayang 🤍</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(180deg, #fde2ea, #fff1f6);
+      font-family: 'Segoe UI', sans-serif;
+      color: #5a3d4f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-transform: lowercase;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      padding: 24px;
+      max-width: 420px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1, p {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeUp 1.2s ease forwards;
+    }
+
+    h1 {
+      font-size: 1.6em;
+      margin-bottom: 18px;
+      animation-delay: 0.3s;
+    }
+
+    p {
+      font-size: 0.95em;
+      line-height: 1.6em;
+      margin-bottom: 14px;
+    }
+
+    .p1 { animation-delay: 0.8s; }
+    .p2 { animation-delay: 1.6s; }
+    .p3 { animation-delay: 2.4s; }
+    .p4 { animation-delay: 3.2s; }
+    .p5 { animation-delay: 4.0s; }
+    .p6 { animation-delay: 4.8s; }
+    .p7 { animation-delay: 5.6s; }
+    .p8 { animation-delay: 6.4s; }
+
+    .cake {
+      font-size: 4em;
+      cursor: pointer;
+      margin: 20px 0;
+      opacity: 0;
+      animation: fadeUp 1.2s ease forwards;
+      animation-delay: 7.2s;
+    }
+
+    .note {
+      font-size: 0.8em;
+      opacity: 0;
+      animation: fadeUp 1.2s ease forwards;
+      animation-delay: 7.8s;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>happy 18th birthday, ma sayang 🎂🤍</h1>
+
+    <p class="p1">
+      today ma sayang is officially eighteen years old.  
+      nggak kerasa ya, sekarang ma sayang udah 18.  
+      banyak banget cerita dan proses yang udah dilewatin sampai sejauh ini,  
+      dan lia bersyukur banget bisa ada di hari spesial ini 🥺
+    </p>
+
+    <p class="p2">
+      pelan-pelan, tanpa lia sadari,  
+      kehadiran ma sayang jadi hal penting di hidup lia.  
+      hari-hari biasa terasa lebih hangat,  
+      dan hari berat jadi sedikit lebih ringan,  
+      cuma karena lia tau ma sayang ada 🤍
+    </p>
+
+    <p class="p3">
+      turning eighteen is a new chapter, ma sayang.  
+      mungkin rasanya campur aduk,  
+      tapi semoga ke depannya lebih banyak hal baik yang datang ✨
+    </p>
+
+    <p class="p4">
+      lia bangga banget sama ma sayang.  
+      bangga sama semua proses,  
+      sama cara ma sayang bertahan dan terus nyoba walaupun capek 🤍
+    </p>
+
+    <p class="p5">
+      makasih ya udah hadir di hidup lia.  
+      makasih udah jadi diri ma sayang yang apa adanya.  
+      makasih udah tetap berusaha setiap hari 🥺
+    </p>
+
+    <p class="p6">
+      mungkin ma sayang nggak selalu sadar,  
+      tapi senyum kecil dan cerita sederhana ma sayang  
+      selalu punya tempat spesial di hati lia 🤍
+    </p>
+
+    <p class="p7">
+      lia has always loved ma sayang.  
+      bukan cuma hari ini,  
+      tapi di setiap langkah ke depan.
+    </p>
+
+    <p class="p8">
+      happy eighteenth, ma sayang.  
+      lia so grateful for ma sayang,  
+      today, tomorrow, and always 🎂🤍🥺
+    </p>
+
+    <div class="cake" onclick="blowCandle()">🎂🕯️</div>
+    <div class="note">tap kuenya buat tiup lilin 🤍</div>
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2022/10/03/audio_5c5b0c7c64.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    function blowCandle() {
+      document.querySelector('.cake').innerHTML = '🎂✨';
+      alert('make a wish, ma sayang 🤍');
+    }
+  </script>
+
+</body>
+</html>
